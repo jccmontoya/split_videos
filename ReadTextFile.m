@@ -1,4 +1,4 @@
-function parsed_text = ReadTextFile(file_path)
+function cell_parsed_text = ReadTextFile(file_path)
 % This function reads an imput text file containing the clipping
 % information in comma separated values following this format:
 % Date, Video_name, clip_start_time, clip_end_time
@@ -12,7 +12,7 @@ c = a{2};
 d = a{3};
 e = a{4};
 
-parsed_text = [b,c,d,e];
+cell_parsed_text = [b,c,d,e];
 
 fclose(fileID);
 end
