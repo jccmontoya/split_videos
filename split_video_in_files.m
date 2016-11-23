@@ -47,7 +47,7 @@ for i = init_frame:interval_frames:video_reader.NumberOfFrames
     
     if end_timestamp <= video_reader.Duration
         clip_name = [out_folder video_name '_' sprintf('%05d', init_timestamp) '-' ...
-            sprintf('%05d',end_timestamp)];
+            sprintf('%05d',end_timestamp)]
         
         video_writer = VideoWriter(clip_name);
         video_writer.FrameRate = frame_rate;
